@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/Logotipo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/postobon"
+
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintHeight_percent="0.3"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintVertical_bias="0"
+        android:contentDescription="@string/todo" />
+    <EditText
+        android:id="@+id/numHoras"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Num_horas"
+        android:inputType="number"
+
+        app:layout_constraintWidth_percent="0.7"
+
+        app:layout_constraintTop_toBottomOf="@id/Logotipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintVertical_bias="0.10"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/nombreColaborador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/colaborador"
+        android:inputType="text"
+
+        app:layout_constraintWidth_percent="0.7"
+
+        app:layout_constraintTop_toBottomOf="@id/numHoras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintVertical_bias="0.2"
+        android:autofillHints="" />
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintWidth_percent="0.7"
+
+        app:layout_constraintTop_toBottomOf="@id/nombreColaborador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintVertical_bias="0.7"
+        />
+
+    <Button
+        android:id="@+id/Btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/calc"
+        android:background="@color/black"
+
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.06"
+
+        app:layout_constraintTop_toBottomOf="@id/nombreColaborador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/resultado"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

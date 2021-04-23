@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Postobon</string>
+    <string name="Num_horas">digite el numero de horas</string>
+    <string name="colaborador">Nombre colaborador</string>
+    <string name="calc">calcular</string>
+    <string name="todo">TODO</string>
+</resources>
